@@ -12,7 +12,7 @@ body {
 header{
     padding-top: 1px;
     width: 100%;
-    height:100px;
+    height:80px;
     letter-spacing: 1px;
     border-radius: 2%;
     position: fixed;
@@ -28,7 +28,7 @@ header li{
     font-size: 23px;
     float: left;
     margin-right: 4rem;
-   margin-top: 35px;
+   margin-top: 25px;
 }
 header li span{
     color:white;
@@ -48,14 +48,30 @@ height: 40px;
 font-family: "Roboto Serif", serif;
 font-optical-sizing: auto;
 font-weight: 300;
-margin-top: 28px;
+margin-top: 22px;
 margin-right: 5%;
 font-size: 18px; /* Text size */
 border-radius: 8px; /* Rounded corners */
 cursor: pointer; /* Pointer cursor on hover */
 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-transition: all 0.3s ease; /* Smooth hover effect */
+transition: all 0.5s ease; /* Smooth hover effect */
 }
+header button:hover{   
+  background: none; /* Darker gradient on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+ letter-spacing: 2px;
+  color:#f7f0f0;
+ 
+  border: 3px solid #FFC470;
+  span{
+    letter-spacing: 4px;
+      color:#ECDFCC;
+  }
+}
+header button:focus{
+  outline: 3px solid #3ecd5e;
+}
+
 header ol{
   margin-left: 8%;
   list-style: none;
@@ -81,7 +97,29 @@ margin-top: 30px;
 font-style: normal;
 font-size: 35px;
 }
-
+.main button{
+  /* border: 3px solid #146C94;  */
+  font-size: 20px;
+  text-align: center;
+  border-width: 2px;
+  font-family: "Roboto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  border: none;
+  background-color: #146C94;
+  width: 11rem;
+  height: 3rem;
+ 
+}
+.main button:hover{
+  background-color: #0A5EB0;
+  /* border: 3px solid #FFC470; */
+  color:#fff7f7e0;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
 #skills {
   text-align: center;
   padding: 40px;
@@ -363,7 +401,7 @@ font-style: normal;
 
 .thank-you-message {
   flex: 1;
-margin-top: 120px;
+margin-top: 30px;
 margin-left: 20px;
 margin-right: 40px;
   font-family: "Roboto Serif", serif;
@@ -374,12 +412,12 @@ margin-right: 40px;
 
 .thank-you-message h2 {
   font-size: 2em;
-  color: #209005; /* Your preferred green color */
+  color: #FF8C00 ; /* Your preferred green color */
 }
 
 .thank-you-message p {
   font-size: 1.1em;
-  margin-top: 50px;
+  margin-top: 30px;
   font-size: 18px;
   letter-spacing: 1px;
   color: #333;
@@ -413,20 +451,35 @@ margin-right: 40px;
   border-radius: 5px;
   font-size: 1em;
 }
-
-.message-box button {
+.thank-you-message a{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  text-decoration: none;
+}
+.thank-you-message button {
   padding: 10px;
-  background-color: #28ba07; /* Green button */
+  margin-top: 20px;
+  background-color: #0077B5; /* Green button */
   color: white;
   border: none;
   border-radius: 5px;
   font-size: 1.2em;
   cursor: pointer;
+  transition: all 0.5s ease;
 }
-
+.thank-you-message button:hover{
+  background-color: #005983;
+ 
+}
 .message-box button:hover {
   background-color: #209005; /* Darker green on hover */
 }
+
+footer a:hover {
+  color: #d1d8e0; /* Light gray color on hover */
+}
+
 
 /* Responsive design */
 @media (max-width: 768px) {
@@ -540,7 +593,7 @@ margin-right: 40px;
     margin-left: -10px;
   }
   header button{
-    margin-top: 30px;
+    margin-top: 22px;
     width: 160px;
 height: 40px;
 
@@ -552,13 +605,14 @@ height: 40px;
 }
 @media (min-width: 600px) and (max-width: 768px) {
   header ol{
-    margin-left: 2rem;
+    margin-left: 1rem;
+    margin-right: 2px;
   }
   header li[name=home],li[name="edu"],li[name="project"],li[name="skill"]{
     display:none;
   }
   header button{
-    margin-top: 30px;
+    margin-top: 22px;
     width: 160px;
 height: 40px;
   }
@@ -571,10 +625,10 @@ height: 40px;
   header li{
     font-size: 20px;
     margin-right: 2.5rem;
-    margin-top:30px;
+    margin-top:22px;
   }
   header li[value="1"]{
-    margin-top:35px;
+    margin-top:25px;
   }
   header li[name=about]{
     display: none;
@@ -589,6 +643,7 @@ height: 40px;
     right: 4px; /* Distance from the right */
     width: 140px;
 height: 35px;
+display:none;
 }
 .education{
   background-color: #FFFBE6;
@@ -601,14 +656,18 @@ height: 35px;
 }
 header button{
   width:150px;
-  margin-top: 35px;
-  margin-right: 8px;
+  margin-top: 22px;
+  margin-right: 18px;
+}
+header button:hover{
+  letter-spacing: 1px;
 }
 header li{
+  margin-top: 22px;
   margin-left: 0.1rem;
 }
 header li[value="1"]{
-  margin-top: 40px;
+  margin-top: 25px;
   margin-right:2rem
 }
 header ol{
@@ -627,6 +686,19 @@ margin-left:2rem;
   margin-top: 20px;
 }
 }
+
+/* Responsive Styles for Small Screens */
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column; /* Stack items vertically */
+    text-align: center; /* Center-align text */
+  }
+
+  footer div {
+    margin-top: 10px; /* Add spacing between text and links */
+  }
+}
+
 header a{
     text-decoration: none;
     color: #d3d3d3c5;
@@ -649,20 +721,7 @@ header span{
     margin-left: 8px;
     font-style:italic;
 }
-header button:hover{   
-    background: none; /* Darker gradient on hover */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
-    transition: all 0.3s ease;
-    color:#D3D3D3;
-   
-    border: 3px solid #FFC470;
-    span{
-        color:#ECDFCC;
-    }
-}
-header button:focus{
-    outline: 3px solid #3ecd5e;
-}
+
 header img{
 
     height: 100px;
@@ -696,20 +755,7 @@ word-spacing: 2px;
   
 }
 
-.main button{
-    border: 3px solid #146C94; 
-    font-size: 20px;
-    text-align: center;
-    border-width: 2px;
-    font-family: "Roboto Serif", serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    border: none;
-    background-color: #FFC470;
-    width: 11rem;
-    height: 3rem;
-   
-}
+
 #typing-text {
   font-size: 2rem;
   font-weight: bold;
@@ -728,14 +774,7 @@ animation:
   typing 1s steps(20, end) forwards,
   blink .8s infinite;}
 
-.main button:hover{
-    background-color: #146C94;
-    /* border: 3px solid #FFC470; */
-    color:#fff7f7e0;
-    box-shadow: #0f0d0d;
-    cursor: pointer;
-    transition: all 0.4s ease;
-}
+
 /* .projects{
     background-color: #18181B;
     display: flex;

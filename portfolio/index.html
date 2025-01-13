@@ -5,6 +5,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="./index.css">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 <link href="https://example-cdn.com/fonts/CustomFont.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -33,11 +34,11 @@
         <ol>
             <li draggable="true"> <span> Devportfolio</span></li>
             <li value="1" name="home"><a href="#home" >Home</a></li>
-            <li value="1" name="edu"><a href="#education">Education</a></li>
-            <li value="1" name="project"><a href="#projects">Projects</a></li>
-            <li value="1" name="skill"><a href="#skills">Skills</a></li>
+            <li value="1" name="edu"><a href="#edu">Education</a></li>
+            <li value="1" name="project"><a href="#pro">Projects</a></li>
+            <li value="1" name="skill"><a href="#sk">Skills</a></li>
             <li value="1" name="about"><a href="#about">About</a></li>
-            <a href="#message"><button>Let's Talk <span>>></span></button></a>
+            <a href="#message"><button>Let's Talk<span>>></span></button></a>
         </ol>
      
     </header>
@@ -48,7 +49,7 @@
       <div class="col-lg-6 mx-auto">
         <p class="lead mb-4">A Software Developer with a passion for creating impactful solutions. With expertise in C++, Java, Python, I focus on delivering high-quality work that aligns with both user needs and business goals. Explore my portfolio to see how I bring creativity and problem-solving to every project</p>
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-          <a href="../../../Downloads/Resume3_0.pdf"><button id="skills" type="button" class="btn btn-primary btn-lg px-4 gap-3" >Download</button></a>
+          <a href="../../../Downloads/Resume3_0.pdf"><button id="sk" type="button" class="btn btn-primary btn-lg px-4 gap-3" >Download</button></a>
           </div>
         </div>
       </div>
@@ -71,7 +72,7 @@
       </div>
       <div class="skill">
         <i class="fab fa-python"></i>
-        <p id="projects">Python</p>
+        <p id="pro">Python</p>
       </div>
     </div>
   </section>
@@ -91,7 +92,7 @@
       <div class="project-card">
         <h3>PropertyNest</h3>
         <p >A real estate platform designed to connect property buyers, sellers, and renters seamlessly. Features include property listings, advanced search filters, user authentication, and a user-friendly interface for efficient property management.</p>
-        <a href="https://github.com/K28night/Property_Nest" target="_blank" id="education">View Project</a>
+        <a href="https://github.com/K28night/Property_Nest" target="_blank" id="edu">View Project</a>
       </div>
       <!-- Add more projects -->
     </div>
@@ -121,28 +122,28 @@
     <p></p>
     <div class="skills">
       <div class="skill-item">
-        <i class="fab fa-html5"></i>
+        <i class="fa-brands fa-python"></i>
         <p>PYTHON</p>
         <div class="skill-bar">
           <div class="skill-level html"></div>
         </div>
       </div>
       <div class="skill-item">
-        <i class="fab fa-css3-alt"></i>
+        <i class="fa-brands fa-java"></i>
         <p>JAVA</p>
         <div class="skill-bar">
           <div class="skill-level css"></div>
         </div>
       </div>
       <div class="skill-item">
-        <i class="fab fa-js-square"></i>
+        <i class="fab fa-css3-alt"></i>
         <p >CSS</p>
         <div class="skill-bar">
           <div class="skill-level js"></div>
         </div>
       </div>
       <div class="skill-item">
-        <i class="fab fa-css3-alt"></i>
+        <i class="fab fa-js-square"></i>
         <p >JavaScript</p>
         <div class="skill-bar" >
           <div class="skill-level java"></div>
@@ -161,12 +162,15 @@
   <section id="recruiter-message">
     <div class="thank-you-message">
         <h2>Thank You for Visiting My Website</h2>
-        <p><b style="font-weight: bold;">Great to have you here! </b>I appreciate your time and interest. If you have any questions or would like to get in touch, feel free to leave a message below. I look forward to connecting with you!</p>
-    </div>
+        <p>I’m a recent graduate passionate about coding and building innovative solutions. As I step into the tech world, I’m looking for opportunities to apply my skills, grow as a developer, and contribute to exciting projects.
+</p>
+          <p>Let’s connect and make something awesome together!</p>
+        <a href="https://www.linkedin.com/in/alan-pj-5747a1247/"><button type="submit"> Find me on  <i class="fa-brands fa-linkedin" title="next page"></i> </button></a>
+      </div>
     
     <div class="message-box">
         <h3>Send Me a Message</h3>
-        <form action="send_message.php" method="POST">
+        <form  method="POST">
             <label for="recruiter-name">Your Name:</label>
             <input type="text" id="recruiter-name" name="recruiter_name" required>
 
@@ -175,11 +179,63 @@
 
             <label for="recruiter-message">Your Message:</label>
             <textarea id="recruiter-message" name="message" rows="4" required></textarea>
-
-            <button type="submit">Send Message</button>
-        </form>
+          </form>
+           
+        
     </div>
 </section>
+
+<!-- Footer Section -->
+<!-- Footer Section -->
+<!-- Footer Section -->
+<footer style="
+  background: linear-gradient(135deg, #004e92, #0077b5);
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+   font-family: Roboto Serif, serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  letter-spacing:1px;
+  font-size: 16px;
+">
+  <!-- Left-Aligned Text -->
+  <p style="margin: 0;">© 2025 Alan P J. All rights reserved.</p>
+
+  <!-- Right-Aligned Social Links -->
+  <div>
+    <a href="https://github.com/K28night" target="_blank" style="
+      color: white; 
+      text-decoration: none; 
+      margin: 0 10px; 
+      font-size: 20px;
+      transition: color 0.3s ease;
+    ">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/alan-pj-5747a1247/" target="_blank" style="
+      color: white; 
+      text-decoration: none; 
+      margin: 0 10px; 
+      font-size: 20px;
+      transition: color 0.3s ease;
+    ">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://www.instagram.com/your-instagram-profile" target="_blank" style="
+      color: white; 
+      text-decoration: none; 
+      margin: 0 10px; 
+      font-size: 20px;
+      transition: color 0.3s ease;
+    ">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
+</footer>
+
 
 
   
