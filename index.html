@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./index.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+<link href="https://example-cdn.com/fonts/CustomFont.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Faculty+Glyphic&family=Headland+One&family=Oswald:wght@200..700&family=Parkinsans:wght@300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Protest+Revolution&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <script>// Dark & Light toggle
+
+    document.querySelector(".day-night input").addEventListener("change", () => {
+      document.querySelector("body").classList.add("toggle");
+      setTimeout(() => {
+        document.querySelector("body").classList.toggle("light");
+    
+        setTimeout(
+          () => document.querySelector("body").classList.remove("toggle"),
+          10
+        );
+      }, 5);
+    });
+    </script>
+</head>
+<body>
+    <header >
+       
+        <ol>
+            <li draggable="true"> <span> Devportfolio</span></li>
+            <li value="1" name="home"><a href="#home" >Home</a></li>
+            <li value="1" name="skill"><a href="#sk">Skills</a></li>
+            <li value="1" name="project"><a href="#pro">Projects</a></li>
+            <li value="1" name="edu"><a href="#edu">Education</a></li>
+            <li value="1" name="about"><a href="#about">About</a></li>
+            <a href="#message"><button>Let's Connect<span>>></span></button></a>
+        </ol>
+     
+    </header>
+  
+    <div class="px-4 py-5 my-5 text-center main" id="home">
+      <div class="demo" style="margin-top:30px">
+      <h1 class="display-5 fw-bold text-body-emphasis">Hi.I'm Alan P J</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">A Software Developer with a passion for creating impactful solutions. With expertise in C++, Java, Python, I focus on delivering high-quality work that aligns with both user needs and business goals. Explore my portfolio to see how I bring creativity and problem-solving to every project</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <a href="../../../Downloads/Resume3_0.pdf"><button id="sk" type="button" class="btn btn-primary btn-lg px-4 gap-3" >Download</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!--  -->
+  <section id="skills">
+    <h1>My Skills</h1>
+    <div class="skills-container">
+      <div class="skill">
+        <i class="fab fa-html5"></i>
+        <p>HTML</p>
+      </div>
+      <div class="skill">
+        <i class="fab fa-css3-alt"></i>
+        <p>CSS</p>
+      </div>
+      <div class="skill">
+        <i class="fab fa-js-square"></i>
+        <p>JavaScript</p>
+      </div>
+      <div class="skill">
+        <i class="fab fa-python"></i>
+        <p id="pro">Python</p>
+      </div>
+    </div>
+  </section>
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Phishing Website Detection</h3>
+        <p>A machine learning-based project built using Python and Django. Utilized SVM algorithms to detect and prevent phishing attacks. Features an automatic detection extension to enhance user security online.</p>
+        <a href="https://github.com/K28night/Phishing-Web-Site-Detection" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>BabyVax</h3>
+        <p>A comprehensive vaccination booking system for parents to manage their baby's vaccination schedule efficiently. Includes features for viewing vaccine details, booking slots, and tracking vaccination history. Developed using PHP and MySQL.</p>
+        <a href="https://github.com/K28night/BabyVax" target="_blank">View Project</a>
+      </div> 
+      <div class="project-card">
+        <h3>PropertyNest</h3>
+        <p >A real estate platform designed to connect property buyers, sellers, and renters seamlessly. Features include property listings, advanced search filters, user authentication, and a user-friendly interface for efficient property management.</p>
+        <a href="https://github.com/K28night/Property_Nest" target="_blank" id="edu">View Project</a>
+      </div>
+      <!-- Add more projects -->
+    </div>
+  </section>
+  <section class="education" id="education">
+    <h2>Education</h2>
+    <div class="education-grid">
+      <div class="education-item">
+        <h3>Master of Computer Applications (MCA) - Ongoing</h3>
+        <p>De Paul Institute of Science & Technology (DiST)
+          College in Angamaly</p>
+        <p>2023 - Present</p>
+       
+      </div>
+      <div class="education-item">
+      
+        <h3>Bachelor of Technology in Computer Science</h3>
+        <p>prajyoti niketan college, Puthukkad, Kerala
+        </p>
+        <p id="about">2019 - 2023</p>
+      </div>
+    </div>
+  </section>
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>I'm ALAN P J, a software engineer who specializes in full-stack web development.I participated in a 24-hour hackathon at SCMS College, Muttom, where my team developed a 'Patient Health Card,' fostering innovation and teamwork under pressure while creating impactful solutions. Here are some of the skills I bring to the table:</p>
+    <p></p>
+    <div class="skills">
+      <div class="skill-item">
+        <i class="fa-brands fa-python"style="color:rgb(50, 171, 195)"></i>
+        <p>PYTHON</p>
+        <div class="skill-bar">
+          <div class="skill-level html"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <i class="fa-brands fa-java"style="color:rgb(50, 171, 195)"></i>
+        <p>JAVA</p>
+        <div class="skill-bar">
+          <div class="skill-level css"style="color:rgb(50, 171, 195)"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-css3-alt"style="color:rgb(50, 171, 195)"></i>
+        <p >CSS</p>
+        <div class="skill-bar">
+          <div class="skill-level js"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-js-square" style="color:rgb(50, 171, 195)"></i>
+        <p >JavaScript</p>
+        <div class="skill-bar" >
+          <div class="skill-level java"></div>
+        </div>
+      </div>
+      <!-- Add more skills as needed -->
+    </div>
+    <h2 class="fun">Fun Facts</h2>
+    <ul class="fun-facts">
+      <li><strong>Favorite Language:</strong> Java</li>
+      <li><strong>Hobbies:</strong> Traveling, Hiking, Photography</li>
+      <li><strong>Favorite Tech:</strong> Python Flask and ReactJs</li>
+      <li id="message"><strong>Open-Source Contributions:</strong> 10+ repositories</li>
+    </ul>
+  </section>
+  <section id="recruiter-message">
+    <div class="thank-you-message">
+        <h2>Thank You for Visiting My Website</h2>
+        <p>A responsive portfolio website showcasing my skills, projects, and experience as a developer. Includes links to connect via LinkedIn, GitHub, and Instagram. Built with a focus on clean design and usability."
+</p>
+          <p>Let’s connect and make something awesome together!</p>
+        <a href="https://www.linkedin.com/in/alan-pj-5747a1247/"><button type="submit"> Find me on  <i class="fa-brands fa-linkedin" title="next page"></i> </button></a>
+      </div>
+    
+    <div class="message-box">
+        <h3>Send Me a Message</h3>
+        <form  method="POST">
+            <label for="recruiter-name">Your Name:</label>
+            <input type="text" id="recruiter-name" name="recruiter_name" required>
+
+            <label for="recruiter-email">Your Email:</label>
+            <input type="email" id="recruiter-email" name="recruiter_email" required>
+
+            <label for="recruiter-message">Your Message:</label>
+            <textarea id="recruiter-message" name="message" rows="4" required></textarea>
+          </form>
+           
+        
+    </div>
+</section>
+
+<!-- Footer Section -->
+<!-- Footer Section -->
+<!-- Footer Section -->
+<footer style="
+  background: linear-gradient(135deg, #004e92, #0077b5);
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+   font-family: Roboto Serif, serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  letter-spacing:1px;
+  font-size: 16px;
+">
+  <!-- Left-Aligned Text -->
+  <p style="margin: 0;">© 2025 Alan P J. All rights reserved.</p>
+
+  <!-- Right-Aligned Social Links -->
+  <div>
+    <a href="https://github.com/K28night" target="_blank" style="
+      color: white; 
+      text-decoration: none; 
+      margin: 0 10px; 
+      font-size: 20px;
+      transition: color 0.3s ease;
+    ">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/alan-pj-5747a1247/" target="_blank" style="
+      color: white; 
+      text-decoration: none; 
+      margin: 0 10px; 
+      font-size: 20px;
+      transition: color 0.3s ease;
+    ">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://www.instagram.com/your-instagram-profile" target="_blank" style="
+      color: white; 
+      text-decoration: none; 
+      margin: 0 10px; 
+      font-size: 20px;
+      transition: color 0.3s ease;
+    ">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
+</footer>
+
+
+
+  
+  
+
+  
+  <!-- twitter -->
+ 
+                  
+              
+                  
+  
+              
+</body>
+</html>
